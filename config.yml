@@ -1,0 +1,16 @@
+title: nav4it
+description: course
+template:
+  repo: nav4it-template
+  name: nav4it
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
